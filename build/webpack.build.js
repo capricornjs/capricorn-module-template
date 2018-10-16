@@ -50,12 +50,12 @@ config.plugins = (config.plugins || []).concat([
 	// new CopyWebpackPlugin([{
 	// 	from: 'src/static'
 	// }, {
-	// 	from: 'src/index.html'
+	// 	from: 'template/index.html'
 	// }]),
 	
 	new HtmlWebpackPlugin({
 		filename: '../assets/index.html',
-		template: 'src/index.html'
+		template: 'template/index.html'
 	})
 ])
 

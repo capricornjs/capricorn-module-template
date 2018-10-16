@@ -1,7 +1,7 @@
 {
-	"name": "capricorn-module-template",
+	"name": "{{ moduleName }}",
 	"version": "0.0.1",
-	"description": "摩羯系统 - 功能模块模版",
+	"description": "{{ moduleDesc }}",
 	"main": "index.js",
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
@@ -14,16 +14,8 @@
 			"pre-commit": "npm run lint"
 		}
 	},
-	"author": "yangxi",
+	"author": "{{ author }}",
 	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+.git"
-	},
-	"bugs": {
-		"url": "/issues"
-	},
-	"homepage": "#readme",
 	"devDependencies": {
 		"@babel/core": "^7.1.2",
 		"@babel/preset-env": "^7.1.0",

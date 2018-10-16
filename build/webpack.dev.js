@@ -51,7 +51,7 @@ config.plugins = (config.plugins || []).concat([
 	}),
 	new HtmlWebpackPlugin({
 		filename: 'index.html',
-		template: 'src/index.html'
+		template: 'template/index.html'
 	}),
 	
 	new webpack.DefinePlugin({
