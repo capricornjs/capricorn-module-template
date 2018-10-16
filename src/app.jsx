@@ -2,7 +2,8 @@ import Home from 'views/home'
 
 import 'style/app.less'
 
-const id = 'wrapabc'
+let id = '{{ moduleName }}'
+id += Date.now()
 const wrapContainer = document.createElement('div')
 wrapContainer.id = id
 document.body.append(wrapContainer)
