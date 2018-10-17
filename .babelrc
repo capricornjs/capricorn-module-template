@@ -5,7 +5,8 @@
 	],
 	"plugins": [
 		"jsx-control-statements",
-		"transform-object-assign"
+		"transform-object-assign",
+		"@babel/plugin-proposal-class-properties"
 	]
 }
 
