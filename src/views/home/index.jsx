@@ -1,5 +1,6 @@
 import classnames from 'classnames'
 import { hot } from 'react-hot-loader'
+import './index.less'
 
 class Home extends React.Component {
 	open () {
@@ -10,7 +11,7 @@ class Home extends React.Component {
 	render () {
 		return (
 			<div onClick={this.open.bind(this)} className={classnames('page-home flex-center', { 'test': true })}>
-				<div>Home </div>
+				<div>Home</div>
 				<If condition={this.isOpen}>
 					<div>-demo</div>
 				</If>

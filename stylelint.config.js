@@ -6,6 +6,7 @@ module.exports = {
 		'comment-empty-line-before': null,
 		'selector-pseudo-element-colon-notation': null,
 		'selector-list-comma-newline-after': null,
+		'rule-empty-line-before': null,
 		'order/properties-order': []
 	}
 }
