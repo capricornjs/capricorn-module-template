@@ -12,7 +12,7 @@ module.exports = {
 	},
 	
 	resolve: {
-		extensions: ['.js', '.jsx', '.json'],
+		extensions: ['.js', '.jsx', '.json', 'index.jsx'],
 		modules: [
 			path.resolve(__dirname, '../node_modules'),
 			path.resolve(__dirname, '../src')
