@@ -1,5 +1,5 @@
 {
-	"name": "{{ moduleName }}",
+	"name": "@capricorn/{{ moduleName }}",
 	"version": "0.0.1",
 	"description": "{{ moduleDesc }}",
 	"main": "index.js",
@@ -8,6 +8,9 @@
 		"build": "node ./build/webpack.build.js",
 		"lint": "eslint --fix --ext .js,.jsx src && stylelint ./src/style/*.less ./src/views/**/*.less --fix"
 	},
+	"files": [
+		"assets"
+	],
 	"husky": {
 		"hooks": {
 			"commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
