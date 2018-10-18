@@ -2,8 +2,8 @@ import Home from 'views/home'
 
 import 'style/app.less'
 
-const moduleName = '{{ moduleName }}'
-const id = moduleName + '-' + Date.now()
+const moduleName = 'capricorn-{{ moduleName }}'
+const id = moduleName
 const wrapContainer = document.createElement('div')
 wrapContainer.id = id
 wrapContainer.className = wrapContainer.role = moduleName
