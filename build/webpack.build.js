@@ -13,8 +13,8 @@ const Spinner = require('./core/spinner')
 config.mode = 'production'
 
 Object.assign(config.output, {
-	filename: '[name].[chunkhash].js',
-	chunkFilename: '[id].[chunkhash].js',
+	filename: '[name].js',
+	chunkFilename: '[id].js',
 	publicPath: '/',
 	path: path.resolve(__dirname, '../assets')
 })
@@ -46,7 +46,7 @@ config.plugins = (config.plugins || []).concat([
 	new UglifyJSPlugin(),
 	//想看包文件的情况，可以打开
 	//new BundleAnalyzerPlugin(),
-	new ExtractTextPlugin('[name].[chunkhash].css'),
+	new ExtractTextPlugin('[name].css'),
 	// new CopyWebpackPlugin([{
 	// 	from: 'src/static'
 	// }, {
