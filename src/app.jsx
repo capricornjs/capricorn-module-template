@@ -1,5 +1,6 @@
+import React from 'react'
+import { render } from 'react-dom'
 import Home from 'views/home'
-
 import 'style/app.less'
 
 const moduleName = 'capricorn-{{ moduleName }}'
@@ -9,4 +10,4 @@ wrapContainer.id = id
 wrapContainer.className = wrapContainer['data-role'] = moduleName
 document.body.append(wrapContainer)
 
-ReactDOM.render(<Home />, document.getElementById(id))
+render(<Home />, document.getElementById(id))

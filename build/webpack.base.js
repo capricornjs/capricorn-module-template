@@ -5,10 +5,16 @@ module.exports = {
 	entry: {
 		app: ['./src/app.jsx']
 	},
+	
 	output: {
 		filename: '[name].js',
 		publicPath: '/',
 		path: path.resolve(__dirname, '../assets')
+	},
+	
+	externals: {
+		'react': 'React',
+		'react-dom': 'ReactDOM'
 	},
 	
 	resolve: {

@@ -1,8 +1,9 @@
+import React, { Component } from 'react'
 import classnames from 'classnames'
 import { hot } from 'react-hot-loader'
 import './index.less'
 
-class Home extends React.Component {
+class Home extends Component {
 	open () {
 		this.isOpen = true
 		this.setState({})
