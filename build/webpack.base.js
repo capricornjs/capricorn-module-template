@@ -41,6 +41,16 @@ module.exports = {
 				// formatter: require('eslint-friendly-formatter'),
 				emitWarning: false
 			}
+		}, {
+			test: /\.(eot|woff2?|ttf|svg)$/,
+			use: [
+				{
+					loader: 'url-loader',
+					options: {
+						limit: 8192
+					}
+				}
+			]
 		}]
 	},
 	

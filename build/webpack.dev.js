@@ -23,7 +23,16 @@ config.entry.app.unshift('webpack-dev-server/client?http://' + appConf.serverNam
 config.module.rules = config.module.rules.concat([
 	{
 		test: /\.(less|css)$/,
-		use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+		use: [
+			'style-loader',
+			'css-loader',
+			'postcss-loader',
+			{
+				loader: 'less-loader',
+				options: {
+					javascriptEnabled: true
+				}
+			}]
 	},
 	{
 		test: /\.(js|jsx)$/,
