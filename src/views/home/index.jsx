@@ -7,8 +7,9 @@ import './index.less'
 class Home extends Component {
 	constructor () {
 		super()
-		this.value = store.getData()
-		this.isOpen = this.value.isShow.value
+		const { isOpen, description } = store.getData()
+		this.isOpen = isOpen.value
+		this.description = description.value
 	}
 	
 	open () {
@@ -19,7 +20,7 @@ class Home extends Component {
 	render () {
 		return (
 			<div onClick={this.open.bind(this)} className={classnames('page-home flex-center', { 'test': true })}>
-				<div>{this.value.description.value}</div>
+				<div>{this.description}</div>
 				<If condition={this.isOpen}>
 					<div>-demo</div>
 				</If>

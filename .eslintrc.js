@@ -34,7 +34,7 @@ module.exports = {
 		'propWrapperFunctions': ['forbidExtraProps']
 	},
 	'rules': {
-		'jsx-quotes': [2, 'prefer-single'],
+		'jsx-quotes': 0,
 		'react/jsx-no-undef': 0,
 		'react/react-in-jsx-scope': 0,
 		'quotes': [2, 'single'],
