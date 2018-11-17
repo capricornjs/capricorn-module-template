@@ -1,3 +1,13 @@
 {
-	"moduleName": "{{ moduleName }}"
+	"moduleName": "{{ moduleName }}",
+	"isShow": {
+		"name": "是否展示",
+		"type": "Boolean",
+		"value": true
+	},
+	"description": {
+		"name": "描述",
+		"type": "String",
+		"value": "home"
+	}
 }
