@@ -1,5 +1,6 @@
 const path = require('path')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -58,6 +59,10 @@ module.exports = {
 		new StyleLintPlugin({
 			// 正则匹配想要lint监测的文件
 			files: ['src/style/*.less', 'src/views/**/*.less']
-		})
+		}),
+		new TransferWebpackPlugin([{
+			from: 'lib',
+			to: 'lib'
+		}], path.resolve(__dirname, "../template"))
 	]
 }
