@@ -3,7 +3,9 @@ import { render } from 'react-dom'
 import Home from 'views/home'
 import 'style/app.less'
 
-const moduleName = 'capricorn-{{ moduleName }}'
+const moduleData = window.Capricorn.modules['{{ moduleName }}'][0]
+const moduleName = moduleData.name
+window.Capricorn.modules['{{ moduleName }}'].shift()
 const id = moduleName
 const wrapContainer = document.createElement('div')
 wrapContainer.id = id
