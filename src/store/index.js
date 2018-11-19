@@ -1,8 +1,4 @@
-class Store extends window.Capricorn.Events {
-	constructor () {
-		super()
-	}
-	
+class Store {
 	data = {}
 	
 	setData (data) {
