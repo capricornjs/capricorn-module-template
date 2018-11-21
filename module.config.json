@@ -1,6 +1,6 @@
 {
 	"moduleName": "{{ moduleName }}",
-	"isShow": {
+	"isOpen": {
 		"name": "是否展示",
 		"type": "Boolean",
 		"value": true
