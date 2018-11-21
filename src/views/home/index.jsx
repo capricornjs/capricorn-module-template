@@ -19,7 +19,7 @@ class Home extends Component {
 	
 	render () {
 		return (
-			<div onClick={this.open.bind(this)} className={classnames('page-home flex-center', { 'test': true })}>
+			<div onClick={this.open.bind(this)} className={classnames('{{ moduleName }} flex-center', { 'test': true })}>
 				<div>{this.description}</div>
 				<If condition={this.isOpen}>
 					<div>-demo</div>
