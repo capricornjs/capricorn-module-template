@@ -12,7 +12,7 @@ window.Capricorn.modules['{{ moduleName }}'].shift()
 const id = moduleName
 const wrapContainer = document.createElement('div')
 wrapContainer.id = id
-wrapContainer.className = wrapContainer['data-role'] = moduleName
+wrapContainer.className = wrapContainer['role'] = moduleName
 document.body.append(wrapContainer)
 
 render(<Home />, document.getElementById(id))
