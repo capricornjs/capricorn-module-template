@@ -6,6 +6,7 @@
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
 		"build": "node ./build/webpack.build.js",
+		"release": "cap release",
 		"lint": "eslint --fix --ext .js,.jsx src && stylelint ./src/style/*.less ./src/views/**/*.less --fix"
 	},
 	"files": [
